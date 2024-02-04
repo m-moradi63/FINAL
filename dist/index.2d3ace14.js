@@ -46033,7 +46033,7 @@ async function verify(secret, eventPayload, signature) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
 parcelHelpers.defineInteropFlag(exports);
 parcelHelpers.export(exports, "token", ()=>token);
-const token = "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";
+const token = "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";
 
 },{"@parcel/transformer-js/src/esmodule-helpers.js":"gkKU3"}],"9WCqk":[function(require,module,exports) {
 var parcelHelpers = require("@parcel/transformer-js/src/esmodule-helpers.js");
@@ -67546,7 +67546,7 @@ function Mainrepo() {
                     }, this),
                     /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
                         children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                            className: "ms-6 w-[16rem] border-none solid  h-[20rem] font-serift",
+                            className: "ms-6 w-[60%] border-none solid  h-[20rem] font-serift",
                             children: [
                                 "About",
                                 /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("br", {}, void 0, false, {
@@ -67778,16 +67778,10 @@ function Mainrepo() {
                                     lineNumber: 357,
                                     columnNumber: 13
                                 }, this),
-                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                                    children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _persantageTsx.Persentage), {}, void 0, false, {
-                                        fileName: "src/subcomponent/Mainrepo.tsx",
-                                        lineNumber: 373,
-                                        columnNumber: 15
-                                    }, this)
-                                }, void 0, false, {
+                                /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)((0, _persantageTsx.Persentage), {}, void 0, false, {
                                     fileName: "src/subcomponent/Mainrepo.tsx",
-                                    lineNumber: 371,
-                                    columnNumber: 13
+                                    lineNumber: 373,
+                                    columnNumber: 15
                                 }, this)
                             ]
                         }, void 0, true, {
@@ -72945,19 +72939,35 @@ function Persentage() {
         return sum;
     });
     return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-        children: entries.map((itm, index)=>{
+        className: "flex w-[100%]   border-2 solid h-[2rem] ",
+        children: entries.map((itm)=>{
             return /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                className: "border-2 solid bg-green-200 h-[1rem] w-[15rem] rounded-lg",
-                children: /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
-                    className: "`${w-[(((itm[1]/sum)*100).toFixed(2))?(((itm[1]/sum)*100).toFixed(2))]}`"
-                }, void 0, false, {
-                    fileName: "src/subcomponent/persantage.tsx",
-                    lineNumber: 35,
-                    columnNumber: 17
-                }, this)
-            }, void 0, false, {
+                children: [
+                    entries[0][1] === itm[1] ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: " w-[40%] border-2 solid h-[2rem] bg-yellow-300" /* {`w-[${(((itm[1]/sum)*100).toFixed(2))}%] border-2solid h-[1rem] bg-yellow-300` */ 
+                    }, void 0, false, {
+                        fileName: "src/subcomponent/persantage.tsx",
+                        lineNumber: 36,
+                        columnNumber: 41
+                    }, this) : "",
+                    entries[1][1] === itm[1] ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-[25%] border-2 solid h-[2rem] bg-red-300" /* {`w-[${(((itm[1]/sum)*100).toFixed(2))}%] border-none solid h-[1rem] bg-black`} */ 
+                    }, void 0, false, {
+                        fileName: "src/subcomponent/persantage.tsx",
+                        lineNumber: 41,
+                        columnNumber: 41
+                    }, this) : "",
+                    entries[2][1] === itm[1] ? /*#__PURE__*/ (0, _jsxDevRuntime.jsxDEV)("div", {
+                        className: "w-[25%] border-2 solid h-[2rem] bg-pink-300" /* {`w-[${(((itm[1]/sum)*100).toFixed(2))}%] border-none solid h-[1rem] bg-red-700`} */ 
+                    }, void 0, false, {
+                        fileName: "src/subcomponent/persantage.tsx",
+                        lineNumber: 45,
+                        columnNumber: 41
+                    }, this) : ""
+                ]
+            }, void 0, true, {
                 fileName: "src/subcomponent/persantage.tsx",
-                lineNumber: 34,
+                lineNumber: 35,
                 columnNumber: 13
             }, this);
         })

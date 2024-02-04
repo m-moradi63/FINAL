@@ -262,7 +262,7 @@ export function Mainrepo() {
           
           
           <div>
-           <div className="ms-6 w-[16rem] border-none solid  h-[20rem] font-serift">
+           <div className="ms-6 w-[60%] border-none solid  h-[20rem] font-serift">
             About
             <br />A massively spiffy yet delicately unobtrusive compression
             library.
@@ -368,10 +368,10 @@ export function Mainrepo() {
               </svg>
               {repoinfo.forks_count}forks
             </a>
-            <div>
+            
               
               <Persentage />
-            </div>
+            
           </div>
           </div>
         </div>
